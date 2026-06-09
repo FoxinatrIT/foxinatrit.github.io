@@ -3,83 +3,173 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Van cyberschaamte naar cyberweerbaar</title>
+    <title>CyberWeerbaar Hub</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <h1>Van cyberschaamte naar cyberweerbaar</h1>
-        <p>Samen sterker tegen cybercrime</p>
-    </header>
+    <div class="app-container">
+        <aside class="sidebar">
+            <div class="brand">
+                <div class="logo-icon">🛡️</div>
+                <h2>CyberHub</h2>
+            </div>
+            <nav class="nav-menu">
+                <a href="#intro" class="nav-item active">📊 Introductie</a>
+                <a href="#herkennen" class="nav-item">🔍 Phishing Herkennen</a>
+                <a href="#vault" class="nav-item">🔑 Wachtwoord Checker</a>
+                <a href="#tips" class="nav-item">💡 Veiligheidstips</a>
+                <a href="#hulp" class="nav-item">🤝 Hulp Zoeken</a>
+            </nav>
+            <div class="sidebar-footer">
+                <button id="themeToggle" class="btn-secondary">🌙 Dark Mode</button>
+            </div>
+        </aside>
 
-    <main>
-        <section>
-            <h2>Wat is cybercrime?</h2>
-            <p>
-                Cybercrime is criminaliteit die plaatsvindt via computers,
-                smartphones of het internet. Voorbeelden zijn phishing,
-                identiteitsfraude, ransomware en online oplichting.
-            </p>
-        </section>
+        <main class="content-area">
+            
+            <header class="dashboard-header">
+                <div>
+                    <h1>Van cyberschaamte naar cyberweerbaar</h1>
+                    <p>Samen bouwen we aan een sterke barrière tegen cybercriminaliteit.</p>
+                </div>
+                <div class="header-badge">Status: Bewust & Weerbaar</div>
+            </header>
 
-        <section>
-            <h2>Waarom slachtoffers zich niet hoeven te schamen</h2>
-            <p>
-                Cybercriminelen gebruiken slimme technieken om mensen te
-                misleiden. Iedereen kan slachtoffer worden, ongeacht leeftijd,
-                opleiding of ervaring. Het is belangrijk om hulp te zoeken en
-                ervaringen te delen zodat anderen ervan kunnen leren.
-            </p>
-        </section>
+            <section id="intro" class="card wide fade-in">
+                <h3>Wat is cybercrime nou echt?</h3>
+                <p>Cybercrime is criminaliteit die plaatsvindt via computers, smartphones of internetnetwerken. Het varieert van phishing-campagnes en identiteitsfraude tot kwaadaardige ransomware die systemen gijzelt.</p>
+                
+                <h4 style="margin-top: 20px; color: var(--primary-accent);">Schaam je niet!</h4>
+                <p>Cybercriminelen gebruiken psychologische triggers (zoals haast, angst of nieuwsgierigheid) en zeer geavanceerde technieken om mensen te misleiden. Iedereen kan slachtoffer worden, ongeacht leeftijd, opleiding of ervaring. Het doorbreken van de schaamte en het delen van ervaringen is de belangrijkste sleutel tot collectieve preventie.</p>
+            </section>
 
-        <section>
-            <h2>Hoe herken je phishing?</h2>
-            <ul>
-                <li>Onverwachte e-mails of berichten.</li>
-                <li>Dringende verzoeken om snel te handelen.</li>
-                <li>Spelfouten of vreemde taal.</li>
-                <li>Verdachte links of bijlagen.</li>
-                <li>Verzoeken om wachtwoorden of bankgegevens.</li>
-            </ul>
-        </section>
+            <section id="herkennen" class="card fade-in">
+                <div class="tool-header">
+                    <span class="tool-tag">Educatie</span>
+                    <h3>Hoe herken je phishing?</h3>
+                </div>
+                <p>Phishing is een vorm van digitale oplichting waarbij aanvallers zich voordoen als betrouwbare instanties. Let goed op de volgende kenmerken om een phishingpoging direct te ontmaskeren:</p>
+                
+                <div class="info-grid">
+                    <div class="info-box">
+                        <div class="info-icon">📧</div>
+                        <h5>Onverwachte afzender</h5>
+                        <p>Berichten van instanties waar je geen klant bent, of e-mails met een vreemd, onlogisch e-mailadres (bijv. bankzaken@outlook.com of info@belasting-herstel-update.nl).</p>
+                    </div>
+                    <div class="info-box">
+                        <div class="info-icon">🚨</div>
+                        <h5>Dringende verzoeken</h5>
+                        <p>Er wordt enorme tijdsdruk uitgeoefend. Je moet "direct handelen" of binnen 24 uur betalen om boetes, accountblokkades of rechtszaken te voorkomen.</p>
+                    </div>
+                    <div class="info-box">
+                        <div class="info-icon">✍️</div>
+                        <h5>Taalfouten & Vreemde toon</h5>
+                        <p>Hoewel phishing steeds professioneler wordt, bevatten veel berichten nog steeds opvallende stijlfouten, vreemde zinsconstructies of een opvallend onpersoonlijke aanhef.</p>
+                    </div>
+                    <div class="info-box">
+                        <div class="info-icon">🔗</div>
+                        <h5>Verdachte links of bijlagen</h5>
+                        <p>Vreemde internetadressen die net afwijken van de echte website (bijv. mijn-ing-veilig.nl in plaats van ing.nl) of ongevraagde bijlagen met bestandstypen zoals .exe of .zip.</p>
+                    </div>
+                </div>
+            </section>
 
-        <section>
-            <h2>Hoe kun je hulp zoeken?</h2>
-            <p>
-                Praat met familie, vrienden of collega's. Meld cybercrime bij
-                de politie of vraag advies bij organisaties die gespecialiseerd
-                zijn in online veiligheid.
-            </p>
+            <section id="vault" class="card tool-card fade-in">
+                <div class="tool-header">
+                    <span class="tool-tag">Live Validatie</span>
+                    <h3>Wachtwoord Sterktemeter</h3>
+                </div>
+                <p class="tool-desc">Typ een fictief wachtwoord om direct de complexiteit en veiligheid ervan te testen. Jouw invoer wordt lokaal verwerkt en nergens opgeslagen.</p>
+                
+                <div class="password-engine">
+                    <div class="input-wrapper">
+                        <input type="password" id="passwordInput" placeholder="Typ een testwachtwoord...">
+                        <button id="togglePasswordVisibility" class="btn-inline">Toon</button>
+                    </div>
+                    
+                    <div class="meter-container">
+                        <div id="passwordStrengthBar" class="meter-bar"></div>
+                    </div>
+                    
+                    <div class="password-rules">
+                        <span id="rule-length" class="rule">❌ Minimaal 12 tekens</span>
+                        <span id="rule-upper" class="rule">❌ Hoofdletter</span>
+                        <span id="rule-special" class="rule">❌ Speciaal teken</span>
+                    </div>
+                    <p id="passwordFeedback" class="feedback-message"></p>
+                </div>
+            </section>
 
-            <button id="helpButton">Toon een tip</button>
-            <p id="tip"></p>
-        </section>
+            <section id="tips" class="card fade-in">
+                <div class="tool-header">
+                    <span class="tool-tag">Preventie</span>
+                    <h3>Praktische Veiligheidstips</h3>
+                </div>
+                <p>Met een paar eenvoudige digitale gewoontes kun je jouw online veiligheid drastisch verhogen en cybercriminelen buiten de deur houden:</p>
+                
+                <ul class="custom-list">
+                    <li>
+                        <strong>Gebruik sterke, unieke wachtwoorden:</strong> 
+                        Gebruik nooit twee keer hetzelfde wachtwoord voor je accounts. Een wachtwoordzin (meerdere willekeurige aan elkaar gekoppelde woorden) is vaak sterker én makkelijker te onthouden.
+                    </li>
+                    <li>
+                        <strong>Activeer tweestapsverificatie (2FA):</strong> 
+                        Dit voegt een cruciale extra beveiligingslaag toe. Zelfs als een crimineel je wachtwoord steelt, kunnen ze zonder de extra unieke code (via een authenticator-app of SMS) niet inloggen.
+                    </li>
+                    <li>
+                        <strong>Houd software up-to-date:</strong> 
+                        Installeer updates voor je besturingssysteem (zoals Windows of iOS), applicaties en virusscanners direct. Deze updates dichten beveiligingslekken die door hackers worden misbruikt.
+                    </li>
+                    <li>
+                        <strong>Klik niet zomaar op links:</strong> 
+                        Zweef eerst met je muis over een link (of houd deze op je telefoon langer ingedrukt) om te zien waar deze écht naartoe leidt voordat je klikt. Vertrouw je het niet? Ga dan handmatig via je browser naar de officiële website.
+                    </li>
+                    <li>
+                        <strong>Maak regelmatig back-ups:</strong> 
+                        Zorg voor periodieke back-ups van je belangrijke documenten en dierbare foto's op een externe, losgekoppelde harde schijf of in een goed beveiligde cloudomgeving. Zo voorkom je dat je bestanden kwijtraakt bij bijvoorbeeld ransomware.
+                    </li>
+                </ul>
+            </section>
 
-        <section>
-            <h2>Praktische veiligheidstips</h2>
-            <ul>
-                <li>Gebruik sterke, unieke wachtwoorden.</li>
-                <li>Activeer tweestapsverificatie (2FA).</li>
-                <li>Werk software regelmatig bij.</li>
-                <li>Klik niet zomaar op links.</li>
-                <li>Maak regelmatig back-ups van belangrijke bestanden.</li>
-            </ul>
-        </section>
+            <section id="hulp" class="card fade-in">
+                <div class="tool-header">
+                    <span class="tool-tag">Ondersteuning</span>
+                    <h3>Hoe kun je hulp zoeken?</h3>
+                </div>
+                <p>Ben je onverhoopt toch slachtoffer geworden of twijfel je sterk over een ontvangen bericht? Je staat er absoluut niet alleen voor. Onderneem direct de volgende stappen:</p>
+                
+                <div class="hulp-steps">
+                    <div class="step-card">
+                        <span class="step-num">1</span>
+                        <h5>Praat er open over</h5>
+                        <p>Deel je situatie direct met familie, vrienden of collega's. Zij kunnen emotionele steun bieden, met je meekijken en helpen helder na te denken om verdere schade te voorkomen.</p>
+                    </div>
+                    <div class="step-card">
+                        <span class="step-num">2</span>
+                        <h5>Meld het bij instanties</h5>
+                        <p>Doe altijd melding of aangifte bij de <strong>Politie</strong> (via 0900-8844 of politie.nl). Neem bij (vermoeden van) financieel misbruik direct contact op met de alarmcentrale van je <strong>Bank</strong> om rekeningen te blokkeren.</p>
+                    </div>
+                    <div class="step-card">
+                        <span class="step-num">3</span>
+                        <h5>Schakel deskundigen in</h5>
+                        <p>Meld cybercrime bij de <strong>Fraudehelpdesk</strong> om anderen te waarschuwen en vraag onafhankelijk advies. Voor emotionele en praktische ondersteuning na oplichting kun je terecht bij <strong>Slachtofferhulp Nederland</strong>.</p>
+                    </div>
+                </div>
 
-        <section>
-            <h2>Betrouwbare externe bron</h2>
-            <p>
-                Meer informatie over online veiligheid vind je op:
-                <a href="https://www.veiliginternetten.nl" target="_blank">
-                    Veiliginternetten.nl
-                </a>
-            </p>
-        </section>
-    </main>
+                <div class="external-links" style="margin-top: 25px;">
+                    <a href="https://www.veiliginternetten.nl" target="_blank" rel="noopener noreferrer" class="link-card">
+                        <span>Bezoek VeiligInternetten.nl voor extra betrouwbare bronnen en advies</span>
+                        <span>➔</span>
+                    </a>
+                </div>
+            </section>
+
+        </main>
+    </div>
 
     <footer>
-        <p>&copy; 2026 Cyberweerbaarheid Project</p>
+        <p>&copy; 2026 Cyberweerbaarheid Hub. Samen sterker tegen cybercrime.</p>
     </footer>
 
     <script src="script.js"></script>
