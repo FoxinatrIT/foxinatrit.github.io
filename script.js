@@ -74,11 +74,11 @@ function initPasswordChecker() {
 
         if (score <= 2) {
             bar.style.backgroundColor = "var(--error-color)";
-            feedback.textContent = "🚨 Direct kraakbaar. Verleng je wachtwoord met meer speciale karakters en (hoofd)letters.";
+            feedback.textContent = "🚨 Onveilig. Verleng je wachtwoord met meer speciale karakters en (hoofd)letters.";
             feedback.style.color = "var(--error-color)";
         } else if (score <= 4) {
             bar.style.backgroundColor = "var(--warning-color)";
-            feedback.textContent = "⚡ Matig veilig. Voeg extra speciale karakters toe.";
+            feedback.textContent = "⚡ Redelijk veilig. Probeer extra speciale karakters toe te voegen voor extra veiligheid.";
             feedback.style.color = "var(--warning-color)";
         } else {
             bar.style.backgroundColor = "var(--success-color)";
